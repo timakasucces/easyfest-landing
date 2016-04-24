@@ -85,16 +85,21 @@ h4{
 		text-decoration:none;
 		color: #3a15b9;
 	}
-	.page-nav-wrapper li.active a:hover{
+	.page-nav-wrapper li.active a:hover,
+	.page-nav-wrapper li.active a:focus{
 		color: #3a15b9;
 	}
-	.page-nav-wrapper li:hover{
+	.page-nav-wrapper li:hover,
+	.page-nav-wrapper li:focus{
 		background: rgba(255,255,255, 1);
 	}
 	.page-nav-wrapper li a,
-	.page-nav-wrapper li.active a{
+	.page-nav-wrapper li a:hover,
+	.page-nav-wrapper li.active a,
+	.page-nav-wrapper li.active a:hover{
 		padding: 6px 16px;
 		display:block;
+		background: transparent;
 	}
 	.page-nav-wrapper li.active a{
 		color: #fff;
