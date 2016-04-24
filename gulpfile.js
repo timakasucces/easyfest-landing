@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 gulp.task('build', function () {
 	gulp.src([
 			'bower_components/jquery/dist/jquery.js',
+			'bower_components/bootstrap/dist/js/bootstrap.js',
 			'bower_components/fullpage.js/dist/jquery.fullpage.js'
 		])
 	.pipe(concat('js/build.js'))
