@@ -18,6 +18,7 @@
   "dependencies": {
     "fullpage.js": "^2.7.9",
     "reset-css": "^2.0.2011012603",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.1"
   }
 }

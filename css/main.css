@@ -1,8 +1,34 @@
 @font-face{
 	font-family: 'ALSSchlangesans';
-	src: url(../font/ALSSchlangesans.otf);
+	src: url(../fonts/ALSSchlangesans.otf);
 }
 
+/* @font-face{
+	font-family: 'ALSSchlangesans';
+	src: url(../fonts/ALSSchlangesans-Light.otf);
+	font-weight: light;
+}
+ */
+@font-face{
+	font-family: 'ALSSchlangesans';
+	src: url(../fonts/ALSSchlangesans-Bold.otf);
+	font-weight: bold;
+}
+
+body{
+	font-family: 'ALSSchlangesans';
+}
+
+h2{
+	color: #15aa4c;
+	font-size: 44px;
+	font-weight: bold;
+}
+
+h4{
+	color: #3a15b9;
+	font-weight: bold;
+}
 /* header{
 	height: 70px;
 	width: 100%;
@@ -76,9 +102,8 @@
 	color: #fff;
 }
 .page-nav-wrapper{
-	font-family: 'ALSSchlangesans';
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: bold;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -87,4 +112,17 @@
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+.vk-main{
+	margin-top: -10px;
+	font-size: 16px;
+}
+
+.header-row{
+	margin-bottom: 30px;
+}
+
+.btn-lnk{
+	color: #131ab7;
 }
