@@ -1,0 +1,23 @@
+{
+  "name": "easyfest-landing",
+  "authors": [
+    "kotelnikov@enhancelab.ru"
+  ],
+  "description": "landing for easyfest",
+  "main": "",
+  "moduleType": [],
+  "license": "None",
+  "homepage": "easyfest.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "^2.7.9",
+    "reset-css": "^2.0.2011012603",
+    "bootstrap": "^3.3.6"
+  }
+}

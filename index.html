@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easyfest</title>
+	<!-- <link rel="stylesheet" href="bower_components/reset-css/reset.css"> -->
+	<!-- <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"> -->
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="icon.png">
+	<link rel="stylesheet" href="css/build.css">
+</head>
+<body>
+	<header id="header">
+		<nav class="page-nav-wrapper">
+			<ul id="page-nav">
+	    		<li data-menuanchor="mainPage" class="brand active">
+	    			<a href="#mainPage">Easyfest</a>
+	    		</li>
+	    		<li data-menuanchor="problemsPage">
+	    			<a href="#problemsPage">Задача</a>
+	    		</li>
+	    		<li data-menuanchor="directionsPage">
+	    			<a href="#directionsPage">Направления</a>
+	    		</li>
+	    		<li data-menuanchor="programPage">
+	    			<a href="#programPage">Программа</a>
+	    		</li>
+	    		<li data-menuanchor="participantPage">
+	    			<a href="#participantPage">Участники</a>
+	    		</li>
+	    		<li data-menuanchor="capabilitiesPage">
+	    			<a href="#capabilitiesPage">Возможности</a>
+	    		</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper" id="fullpage">
+		<section class="section" id="sec1">
+			<div class="content"></div>
+		</section>
+		<section class="section" id="sec2">
+			<div class="content"></div>
+		</section>
+		<section class="section" id="sec3">
+			<div class="content"></div>
+		</section>
+		<section class="section" id="sec4">
+			<div class="content"></div>
+		</section>
+		<section class="section" id="sec5">
+			<div class="content"></div>
+		</section>
+		<section class="section" id="sec6">
+			<div class="content"></div>
+		</section>
+	</div>
+</body>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36967740 = new Ya.Metrika({ id:36967740, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36967740" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script> -->
+
+<script src="js/build.js"></script>
+<script>
+	$(document).ready(function () {
+		var fullpage_options = {
+			css3: true,
+            scrollingSpeed: 1000,
+            anchors:[
+            	'mainPage',
+            	'problemsPage', 
+            	'directionsPage', 
+            	'programPage',
+            	'participantPage',
+            	'capabilitiesPage'
+        	],
+        	menu: '#page-nav',
+        	// fixedElements: '#header'
+        	// navigation: true
+		};
+
+		$('#fullpage').fullpage(fullpage_options);
+	})
+</script>
+</html>

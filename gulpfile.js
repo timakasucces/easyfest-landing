@@ -1,0 +1,23 @@
+var gulp = require('gulp'),
+    cssnano = require('gulp-cssnano'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat');
+
+gulp.task('build', function () {
+	gulp.src([
+			'bower_components/jquery/dist/jquery.js',
+			'bower_components/fullpage.js/dist/jquery.fullpage.js'
+		])
+	.pipe(concat('js/build.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('./'))
+
+	gulp.src([
+			'bower_components/reset-css/reset.css',
+			'bower_components/fullpage.js/dist/jquery.fullpage.css',
+			'css/main.css'
+		])
+	.pipe(concat('css/build.css'))
+	.pipe(cssnano())
+	.pipe(gulp.dest('./'))
+})
