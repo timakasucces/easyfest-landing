@@ -45,6 +45,9 @@
 	    		<li data-menuanchor="mapPage">
 	    			<a href="#mapPage">Как добраться</a>
 	    		</li>
+					<li data-menuanchor="joinPage">
+	    			<a href="#joinPage">Принять участие</a>
+	    		</li>
 			</ul>
 		</nav>
 	</header>
@@ -171,7 +174,7 @@
 		</section>
 		<section class="section" id="sec8">
 			<div class="container">
-				<div class="row">
+				<div class="row header-row">
 					<div class="col-xs-12">
 						<h2>Адрес</h2>
 					</div>
@@ -191,7 +194,36 @@
 				</div>
 			</div>
 		</section>
+		<section class="section" id="sec9">
+			<div class="container">
+				<div class="row header-row">
+					<div class="col-xs-12">
+						<h2>Приглашаем к участию</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-4 joinPage__text">
+						<h3>Это возможность:</h3>
+						<ul>
+							<li>Продемонстрировать свой проект</li>
+							<li>Провести занимательный мастер-класс</li>
+							<li>Подготовить творческий номер</li>
+							<li>Выступить с интересной лекцией</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="" class="btn btn-lg join-btn">Хочу посетить мероприятие</a>
+						<a href="" class="btn btn-lg join-btn">Хочу стать Участником</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
+	<a href="#joinPage" class="float-join-btn" id="float-join-btn">
+		<i class="fa fa-users" aria-hidden="true"></i>
+	</a>
 </body>
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36967740 = new Ya.Metrika({ id:36967740, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36967740" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
@@ -203,13 +235,14 @@
             scrollingSpeed: 1000,
             anchors:[
             	'mainPage',
-            	'problemsPage', 
-            	'directionsPage', 
+            	'problemsPage',
+            	'directionsPage',
             	'programPage',
             	'participantPage',
             	'capabilitiesPage',
             	'contactsPage',
-            	'mapPage'
+            	'mapPage',
+							'joinPage'
         	],
         	menu: '#page-nav',
         	// fixedElements: '#header'
@@ -217,6 +250,11 @@
 		};
 
 		$('#fullpage').fullpage(fullpage_options);
+
+		$('.join-btn').click(function(event){
+			event.preventDefault();
+			$('#float-join-btn').fadeOut(600);
+		});
 	})
 </script>
 </html>
