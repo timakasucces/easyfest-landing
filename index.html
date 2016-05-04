@@ -39,14 +39,14 @@
 	    		<li data-menuanchor="capabilitiesPage">
 	    			<a href="#capabilitiesPage">Возможности</a>
 	    		</li>
+					<li data-menuanchor="joinPage">
+	    			<a href="#joinPage">Принять участие</a>
+	    		</li>
 	    		<li data-menuanchor="contactsPage">
 	    			<a href="#contactsPage">Контакты</a>
 	    		</li>
 	    		<li data-menuanchor="mapPage">
 	    			<a href="#mapPage">Как добраться</a>
-	    		</li>
-					<li data-menuanchor="joinPage">
-	    			<a href="#joinPage">Принять участие</a>
 	    		</li>
 			</ul>
 		</nav>
@@ -69,6 +69,31 @@
 		</section>
 		<section class="section" id="sec6">
 			<div class="content"></div>
+		</section>
+		<section class="section" id="sec9">
+			<div class="container">
+				<div class="row header-row">
+					<div class="col-xs-12">
+						<h2>Приглашаем к участию</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1 hidden-xs" class="joinPage__image">
+						<img src="img/Chelovechek.png" alt="Chelovechek" class="img-responsive">
+					</div>
+					<div class="col-sm-8 col-sm-offset-1 col-xs-12 joinPage__text">
+						<h3>Это возможность:</h3>
+						<ul>
+							<li>Продемонстрировать свой проект</li>
+							<li>Провести занимательный мастер-класс</li>
+							<li>Подготовить творческий номер</li>
+							<li>Выступить с интересной лекцией</li>
+						</ul>
+						<a href="http://goo.gl/forms/nhkNfcPHX6" class="btn btn-lg join-btn">Хочу посетить мероприятие</a>
+						<a href="http://goo.gl/forms/NFB0C68iQ1" class="btn btn-lg join-btn">Хочу стать Участником</a>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="section" id="sec7">
 			<div class="container">
@@ -194,32 +219,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="section" id="sec9">
-			<div class="container">
-				<div class="row header-row">
-					<div class="col-xs-12">
-						<h2>Приглашаем к участию</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-4 joinPage__text">
-						<h3>Это возможность:</h3>
-						<ul>
-							<li>Продемонстрировать свой проект</li>
-							<li>Провести занимательный мастер-класс</li>
-							<li>Подготовить творческий номер</li>
-							<li>Выступить с интересной лекцией</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<a href="" class="btn btn-lg join-btn">Хочу посетить мероприятие</a>
-						<a href="" class="btn btn-lg join-btn">Хочу стать Участником</a>
-					</div>
-				</div>
-			</div>
-		</section>
 	</div>
 	<a href="#joinPage" class="float-join-btn" id="float-join-btn">
 		<i class="fa fa-users" aria-hidden="true"></i>
@@ -240,9 +239,9 @@
             	'programPage',
             	'participantPage',
             	'capabilitiesPage',
+							'joinPage',
             	'contactsPage',
-            	'mapPage',
-							'joinPage'
+            	'mapPage'
         	],
         	menu: '#page-nav',
         	// fixedElements: '#header'
