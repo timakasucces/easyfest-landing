@@ -1,0 +1,3 @@
+* `npm install`
+* `gulp build`
+* And run any simple static server
